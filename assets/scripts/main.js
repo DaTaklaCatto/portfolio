@@ -1,6 +1,14 @@
 (function () {
   "use strict";
 
+  // Stop PWA
+  function stopPWA() {
+    window.addEventListener("beforeistallprompt", (e) => {
+      e.preventDefault();
+    });
+  }
+  stopPWA();
+
   // Register GSAP Plugins
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, CustomEase);
 
@@ -18,7 +26,7 @@
   } else {
     initLucide();
   }
-
+  3;
   /* ==========================================================================
         Live Dhaka Time Clock
      ========================================================================== */
