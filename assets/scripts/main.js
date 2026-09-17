@@ -1,14 +1,6 @@
 (function () {
   "use strict";
 
-  // Stop PWA
-  function stopPWA() {
-    window.addEventListener("beforeistallprompt", (e) => {
-      e.preventDefault();
-    });
-  }
-  stopPWA();
-
   // Register GSAP Plugins
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, CustomEase);
 
