@@ -3,7 +3,319 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nadid Wasique - Portfolio</title>
+    <title>Nadid Wasique — Programmer & UX/UI Developer</title>
+    <meta name="title" content="Nadid Wasique — Programmer & UX/UI Developer" />
+    <meta
+      name="description"
+      content="Portfolio of Nadid Wasique, a Programmer, UX/UI Developer, Designer, and Video Editor based in Dhaka, Bangladesh. Building digital interfaces, React/Next.js systems, and design flows."
+    />
+    <meta
+      name="keywords"
+      content="Nadid Wasique, Programmer, UX UI Developer, Designer, Web Developer Dhaka, React, Next.js, Node.js, JavaScript, Motion Design, Bangladesh Developer"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Nadid Wasique" />
+    <link rel="canonical" href="https://nadid.is-cool.dev/" />
+
+    <!-- Favicon & Theme Color -->
+    <link rel="icon" type="image/png" href="assets/images/_metadata/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/_metadata/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/_metadata/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/_metadata/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/_metadata/favicons/site.webmanifest" />
+    <meta name="theme-color" content="#0B0B0A" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nadid.is-cool.dev/" />
+    <meta property="og:title" content="Nadid Wasique — Programmer & UX/UI Developer" />
+    <meta
+      property="og:description"
+      content="Personal portfolio of Nadid Wasique. Exploring web engineering, UI/UX design, motion design, and digital experiences."
+    />
+    <meta property="og:image" content="https://nadid.is-cool.dev/assets/images/_metadata/landing.png" />
+    <meta property="og:site_name" content="Nadid Wasique Portfolio" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://nadid.is-cool.dev/" />
+    <meta name="twitter:site" content="@nadid_wasique" />
+    <meta name="twitter:creator" content="@nadid_wasique" />
+    <meta name="twitter:title" content="Nadid Wasique — Programmer & UX/UI Developer" />
+    <meta
+      name="twitter:description"
+      content="Personal portfolio of Nadid Wasique. Exploring web engineering, UI/UX design, motion design, and digital experiences."
+    />
+    <meta name="twitter:image" content="https://nadid.is-cool.dev/assets/images/_metadata/landing.png" />
+
+    <!-- Structured Data / Search Engine Knowledge Graph (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nadid Wasique",
+        "url": "https://nadid.is-cool.dev/",
+        "image": "https://nadid.is-cool.dev/assets/images/_metadata/landing.png",
+        "jobTitle": "Programmer & UX/UI Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressCountry": "Bangladesh"
+        },
+        "email": "mailto:nadidwasiquerayed@gmail.com",
+        "sameAs": [
+          "https://www.instagram.com/nadid.ws_57/",
+          "https://www.facebook.com/nadid.wasique/",
+          "https://x.com/nadid_wasique",
+          "https://www.github.com/DaTaklaCatto/",
+          "https://www.linkedin.com/in/nadid-wasique-96a2582b1/",
+          "https://discord.gg/7wvU7J8gYY",
+          "https://t.me/nadidwasique",
+          "https://u.wechat.com/kOr7iwp8or7bNJdwfMss9C4?s=4"
+        ],
+        "knowsAbout": ["Web Development", "JavaScript", "Node.js", "Next.js", "React", "UI/UX Design", "Python", "C++", "Video Editing"]
+      }
+    </script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
-  <body></body>
+  <body data-page="home">
+    <!-- Preloader -->
+    <div class="preloader" data-preloader>
+      <div class="preloader__content">
+        <div class="preloader__counter mono" data-loader-counter>0%</div>
+        <div class="preloader__bar">
+          <div class="preloader__progress" data-loader-progress></div>
+        </div>
+        <p class="preloader__text mono">NADID WASIQUE</p>
+      </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+      <nav class="nav" data-nav>
+        <a href="index.html" class="nav__logo" data-transition-link>Nadid Wasique</a>
+
+        <!-- Desktop Menu -->
+        <div class="nav__menu">
+          <div class="nav__links">
+            <a href="#about" data-scroll-to>
+              <span>01</span>
+              <p>About</p>
+            </a>
+            <a href="#projects" data-scroll-to>
+              <span>02</span>
+              <p>Projects</p>
+            </a>
+            <a href="#contact" data-scroll-to>
+              <span>03</span>
+              <p>Contact</p>
+            </a>
+          </div>
+          <div class="nav__actions">
+            <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+              <i data-lucide="sun" class="icon-sun"></i>
+              <i data-lucide="moon" class="icon-moon"></i>
+              <span class="mono" data-theme-label>DARK</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="menu-btn">
+          <button class="menu-btn__trigger" data-menu-toggle aria-label="Toggle Navigation">
+            <i data-lucide="menu" class="icon-open"></i>
+            <i data-lucide="x" class="icon-close"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-menu" data-mobile-menu>
+        <div class="mobile-menu__inner">
+          <div class="mobile-menu__links">
+            <a href="#about" data-mobile-link data-scroll-to>
+              <span>01</span>
+              <p>About</p>
+            </a>
+            <a href="#projects" data-mobile-link data-scroll-to>
+              <span>02</span>
+              <p>Projects</p>
+            </a>
+            <a href="#contact" data-mobile-link data-scroll-to>
+              <span>03</span>
+              <p>Contact</p>
+            </a>
+          </div>
+          <div class="mobile-menu__actions">
+            <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
+              <i data-lucide="sun" class="icon-sun"></i>
+              <i data-lucide="moon" class="icon-moon"></i>
+              <span class="mono" data-theme-label>DARK</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Smooth Scroll Wrapper Container -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="shell">
+          <!-- Hero Section -->
+          <section class="hero" data-hero>
+            <div class="hero__media" data-hero-media>
+              <img src="assets/images/hero_img.png" alt="Portrait of Nadid Wasique" id="hero-img" />
+            </div>
+            <div class="hero__inner">
+              <p class="hero__eyebrow" data-hero-eyebrow>
+                <span class="line"><span>/// PROGRAMMER</span></span>
+                <span class="line"><span>/// UX / UI DEVELOPER</span></span>
+                <span class="line"><span>/// DESIGNER AND VIDEO EDITOR</span></span>
+              </p>
+              <h1 class="hero__name" data-hero-name>
+                <span class="word"><span>NADID</span></span>
+                <span class="word"><span>WASIQUE</span></span>
+              </h1>
+            </div>
+            <div class="hero__bottom">
+              <div class="hero__tz">
+                <i data-lucide="globe" style="width: 14px; height: 14px"></i>
+                <span>DHAKA, BD</span>
+                <span>/</span>
+                <span data-clock></span>
+                <span>GMT+6</span>
+              </div>
+              <div class="hero__scroll">
+                <span>SCROLL TO SEE MORE</span>
+                <span class="hero__scroll-dot"></span>
+              </div>
+            </div>
+          </section>
+
+          <!-- About Section -->
+          <section class="section" id="about" data-reveal-section>
+            <div class="section-head">
+              <div class="section-head__index mono">( 01 )</div>
+              <div class="section-head__title mono">
+                <span>ABOUT</span>
+                <span>ABOUTME</span>
+              </div>
+            </div>
+
+            <div class="about">
+              <div class="about__text">
+                <p class="split-lines" data-split>I build interfaces and the systems that run underneath them.</p>
+                <p class="split-lines-sub" data-split>
+                  My work sits between design and engineering — sketching flows in Figma, shipping them in React and Next.js, and cutting the
+                  occasional video in between. I like problems with more than one right answer, and I like finishing what I start.
+                </p>
+              </div>
+              <div class="about__meta">
+                <div class="about__meta-row"><span class="label mono">[ TOOLS I USE ]</span></div>
+                <div class="about__meta-row"><span class="label mono">[ Design ]</span><span class="value">Photoshop, Illustrator, Figma</span></div>
+                <div class="about__meta-row"><span class="label mono">[ Web Development ]</span><span class="value">Webflow, Figma</span></div>
+                <div class="about__meta-row">
+                  <span class="label mono">[ Programming / Coding ]</span><span class="value">Visual Studio Code</span>
+                </div>
+                <div class="about__meta-row"><span class="label mono">[ Status ]</span><span class="value">Available for work</span></div>
+                <div class="about__meta-row">
+                  <span class="label mono">[ Social ]</span>
+                  <span class="value">
+                    <a href="https://www.instagram.com/nadid.ws_57/ " target="_blank" rel="noopener">Instagram</a> /
+                    <a href="https://www.facebook.com/nadid.wasique/" target="_blank" rel="noopener">Facebook</a> /
+                    <a href="https://x.com/nadid_wasique" target="_blank" rel="noopener">X</a> /
+                    <a href="https://www.linkedin.com/in/nadid-wasique-96a2582b1/" target="_blank" rel="noopener">LinkedIn</a> /
+                    <a href="https://discord.gg/7wvU7J8gYY" target="_blank" rel="noopener">Discord</a> /
+                    <a href="https://t.me/nadidwasique" target="_blank" rel="noopener">Telegram</a> /
+                    <a href="https://u.wechat.com/kOr7iwp8or7bNJdwfMss9C4?s=4" target="_blank" rel="noopener">WeChat</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="stack" data-magnetic-group>
+              <div class="stack__item" data-magnetic>HTML</div>
+              <div class="stack__item" data-magnetic>CSS</div>
+              <div class="stack__item" data-magnetic>JAVASCRIPT</div>
+              <div class="stack__item" data-magnetic>NODE.JS</div>
+              <div class="stack__item" data-magnetic>NEXT.JS</div>
+              <div class="stack__item" data-magnetic>REACT</div>
+              <div class="stack__item" data-magnetic>PYTHON</div>
+              <div class="stack__item" data-magnetic>C / C++</div>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="section" id="contact" data-reveal-section>
+            <div class="section-head">
+              <div class="section-head__index mono">( 03 )</div>
+              <div class="section-head__title mono">
+                <span>CONTACT</span>
+                <span>GET IN TOUCH</span>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact__main">
+                <p class="contact__eyebrow mono">CURRENTLY OPEN FOR PROJECTS &amp; FREELANCE WORK</p>
+                <h2 class="contact__title split-lines" data-split>Got something to build? Let's talk.</h2>
+                <a class="contact__email" href="mailto:nadidwasiquerayed@gmail.com">
+                  <i data-lucide="mail"></i>
+                  <p>
+                    <span>nadidwasiquerayed@gmail.com</span>
+                    <i data-lucide="arrow-up-right"></i>
+                  </p>
+                </a>
+              </div>
+              <div class="contact__side">
+                <a href="https://www.instagram.com/nadid.ws_57/ " target="_blank" rel="noopener"
+                  ><span>Instagram</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://www.facebook.com/nadid.wasique/" target="_blank" rel="noopener"
+                  ><span>Facebook</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://x.com/nadid_wasique" target="_blank" rel="noopener"
+                  ><span>X</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://www.github.com/DaTaklaCatto/" target="_blank" rel="noopener"
+                  ><span>Github</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/nadid-wasique-96a2582b1/" target="_blank" rel="noopener"
+                  ><span>LinkedIn</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://discord.gg/7wvU7J8gYY" target="_blank" rel="noopener"
+                  ><span>Discord</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://t.me/nadidwasique" target="_blank" rel="noopener"
+                  ><span>Telegram</span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+                <a href="https://u.wechat.com/kOr7iwp8or7bNJdwfMss9C4?s=4" target="_blank" rel="noopener"
+                  ><span>WeChat </span><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer section">
+          <div class="footer__brand">
+            <span>© <span data-year>2026</span> NADID WASIQUE — BUILT WITH LOVE</span>
+          </div>
+          <div class="footer__totop">
+            <a href="#top" data-scroll-top>BACK TO TOP <i data-lucide="arrow-up" style="width: 13px; height: 13px"></i></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>
